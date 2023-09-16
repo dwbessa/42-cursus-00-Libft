@@ -6,12 +6,10 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 11:41:12 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/02 12:33:36 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/09/15 22:18:57 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
-// #include <string.h>
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
@@ -27,17 +25,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-// int	main()
-// {
-// 	const char *t = "testando";
-// 	int c = 'y';
-// 	int a = 'a';
-// 	printf("%s", strchr(t, c));
-// 	printf("\n");
-// 	printf("%s", ft_strchr(t, c));
-// 	printf("\n");
-// 	printf("%s", strchr(t, a));
-// 	printf("\n");
-// 	printf("%s", ft_strchr(t, a));
-// }

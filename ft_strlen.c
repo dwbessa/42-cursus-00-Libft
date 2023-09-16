@@ -6,11 +6,10 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/01 13:06:52 by dbessa            #+#    #+#             */
-/*   Updated: 2023/08/31 16:23:26 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/09/15 22:19:53 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
 #include "libft.h"
 
 size_t	ft_strlen(const char *s)
@@ -24,10 +23,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
-
-// int	main()
-// {
-// 	char str[] = "Daniel";
-// 	printf("%ld\n", ft_strlen(str));
-// 	printf("%ld", strlen(str));
-// }

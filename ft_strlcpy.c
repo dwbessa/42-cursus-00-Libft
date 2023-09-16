@@ -6,11 +6,10 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 14:49:44 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/02 11:31:22 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/09/15 22:19:47 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
@@ -32,12 +31,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (srcsize);
 }
-
-// int	main(void)
-// {
-// 	char	src[] = "testando";
-// 	char	dst[20];
-
-// 	printf("%ld\n", ft_strlcpy(dst, src, 4));
-// 	printf("%s", dst);
-// }

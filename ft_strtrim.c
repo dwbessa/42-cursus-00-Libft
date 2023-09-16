@@ -6,11 +6,10 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 17:56:40 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/05 20:55:47 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/09/15 22:20:51 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
 #include "libft.h"
 
 size_t	newstr_len(char const *s1, char const *set)
@@ -66,12 +65,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	newstr[z] = '\0';
 	return (newstr);
 }
-
-// int	main()
-// {
-// 	char const	*s1 = "Antes de mais nada preciso te falar um negocio";
-// 	char const	*set = "aeiouAEIOU";
-
-// 	printf("%ld\n", newstr_len(s1, set));
-// 	printf("%s", ft_strtrim(s1, set));
-// }

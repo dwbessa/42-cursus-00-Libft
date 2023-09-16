@@ -6,12 +6,10 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 14:46:43 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/02 14:52:37 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/09/15 22:16:03 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
-// #include <strings.h>
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
@@ -27,18 +25,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-// int main() {
-//     char str1[] = "Hello, world!";
-//     char str2[] = "Hello, world!";
-//     size_t n = 5; // Number of bytes to zero out
-
-//     printf("Before ft_bzero: %s\n", str1);
-//     ft_bzero(str1, n);
-//     printf("After ft_bzero:  %s\n", str1);
-//     printf("\nBefore bzero:    %s\n", str2);
-//     bzero(str2, n);
-//     printf("After bzero:     %s\n", str2);
-
-//     return 0;
-// }

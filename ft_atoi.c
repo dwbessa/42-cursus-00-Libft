@@ -6,11 +6,10 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 12:27:34 by dbessa            #+#    #+#             */
-/*   Updated: 2023/08/31 17:32:54 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/09/15 22:03:44 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
 #include "libft.h"
 
 int	ft_atoi(const char *nptr)
@@ -41,16 +40,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (res * sign);
 }
-
-// int	main()
-// {
-// 	char	nptr[] = "    -1234ab567";
-// 	char	nptr1[] = "    1234ab567";
-// 	char	nptr2[] = "    +1234ab567";
-// 	printf("%d\n", ft_atoi(nptr));
-// 	printf("%d\n", ft_atoi(nptr1));
-// 	printf("%d\n\n", ft_atoi(nptr2));
-// 	printf("%d\n", atoi(nptr));
-// 	printf("%d\n", atoi(nptr1));
-// 	printf("%d\n", atoi(nptr2));
-// }

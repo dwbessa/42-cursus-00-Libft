@@ -6,12 +6,10 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 16:37:24 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/02 18:17:59 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/09/15 22:18:35 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
-// #include <string.h>
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
@@ -35,23 +33,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// int main() 
-// {
-//     char src[] = "Hello, World!";
-//     char dest1[20];
-//     char dest2[20];
-//     size_t n = 13; // Number of bytes to move
-
-//     // Using ft_memmove
-//     ft_memmove(dest1, src, n);
-
-//     // Using memmove
-//     memmove(dest2, src, n);
-
-//     // Display results
-//     printf("Using ft_memmove: %s\n", dest1);
-//     printf("Using memmove:    %s\n", dest2);
-
-//     return 0;
-// }

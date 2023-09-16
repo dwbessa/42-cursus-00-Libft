@@ -6,11 +6,10 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 10:54:47 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/05 12:03:08 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/09/15 22:19:16 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -41,10 +40,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s3[i + j + 1] = '\0';
 	return (s3);
 }
-
-// int	main()
-// {
-// 	char const	*src = "FGHIJ";
-// 	char const	*dest = "ABCDE ";
-// 	printf("%s", ft_strjoin(dest, src));
-// }

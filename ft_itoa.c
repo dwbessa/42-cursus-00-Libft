@@ -6,11 +6,10 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/04 15:22:51 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/05 10:48:41 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/09/15 22:17:28 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
 #include "libft.h"
 
 int	num_len(int n)
@@ -61,16 +60,3 @@ char	*ft_itoa(int n)
 	}
 	return (nb);
 }
-
-// int	main(void)
-// {
-// 	int		ptr;
-// 	int		num;
-// 	char	*ptr2;
-
-// 	num = -2147483648;
-// 	ptr = num_len(num);
-// 	printf("%d\n", ptr);
-// 	ptr2 = ft_itoa(num);
-// 	printf("%s", ptr2);
-// }
