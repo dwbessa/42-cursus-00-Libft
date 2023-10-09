@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 14:57:00 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/11 15:37:00 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/08 18:01:34 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		return ;
 	while ((*lst) != NULL)
 	{
-		aux = *lst->next;
+		aux = (*lst)->next;
 		ft_lstdelone(*lst, del);
 		*lst = aux;
 	}

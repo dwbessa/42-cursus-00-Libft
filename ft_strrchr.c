@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 12:15:35 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/15 22:20:36 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/08 21:44:07 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strrchr(const char *s, int c)
 	int	i;
 	int	j;
 
-	j = 0;
+	j = -1;
 	i = 0;
 	while (s[i] != '\0')
 	{
@@ -25,7 +25,11 @@ char	*ft_strrchr(const char *s, int c)
 			j = i;
 		i++;
 	}
-	if (j != 0)
-		return ((char *)&s[j]);
-	return (NULL);
+	if (j == -1)
+	{
+		if (c == '\0')
+			return ((char *)&s[i]);
+		return (NULL);
+	}
+	return ((char *)&s[j]);
 }

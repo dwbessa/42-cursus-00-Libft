@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 15:14:21 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/15 22:19:39 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/08 22:37:35 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		i++;
 	}
 	j = 0;
-	while (j < size && src[j] != '\0')
+	while (j < (size - 1) && src[j] != '\0')
 	{
 		dst[i + j] = src[j];
 		j++;

@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 14:49:44 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/15 22:19:47 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/08 21:42:42 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 	srcsize = ft_strlen(src);
 	j = 0;
-	while (src[j] != '\0' && j < size)
+	if (size > 0)
 	{
-		dst[j] = src[j];
-		j++;
-	}
-	while (j < size)
-	{
+		while (src[j] != '\0' && j < size - 1)
+		{
+			dst[j] = src[j];
+			j++;
+		}
 		dst[j] = '\0';
-		j++;
 	}
 	return (srcsize);
 }
