@@ -40,3 +40,4 @@ int	ft_atoi(const char *nptr)
 	}
 	return (res * sign);
 }
+testegitpush
