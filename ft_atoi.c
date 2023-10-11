@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 12:27:34 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/15 22:03:44 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/11 14:13:43 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (res * sign);
 }
-testegitpush
