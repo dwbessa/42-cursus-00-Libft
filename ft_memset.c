@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 12:28:09 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/15 22:18:36 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/13 14:05:25 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		char_s[i] = (char)c;
+		char_s[i] = c;
 		i++;
 	}
 	return (s);
