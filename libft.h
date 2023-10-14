@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 16:20:59 by dbessa            #+#    #+#             */
-/*   Updated: 2023/10/08 21:52:38 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/14 12:24:03 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,8 @@ void			ft_lstadd_back(t_list **lst, t_list *new);
 void			ft_lstdelone(t_list *lst, void (*del)(void*));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
+void			ft_lstiter(t_list *lst, void (*f)(void *));
+void			ft_lstclear(t_list **lst, void (*del)(void *));
 // Personal functions
 
 #endif
