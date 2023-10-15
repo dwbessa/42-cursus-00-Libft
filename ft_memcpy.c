@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 14:54:23 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/15 22:18:33 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/15 12:11:57 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		char_dest[i] = char_src[i];
 		i++;
 	}
-	return (dest);
+	return ((void *)char_dest);
 }
