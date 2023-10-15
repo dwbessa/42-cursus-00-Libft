@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/10 15:43:19 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/15 22:19:17 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/15 12:20:38 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ char	*ft_strdup(const char *src)
 	char	*d;
 
 	index = 0;
-	d = (char *)malloc(ft_strlen(src) * sizeof(char) + 1);
+	d = malloc(ft_strlen(src) * sizeof(char) + 1);
 	if (!d)
 	{
-		return (0);
+		return (NULL);
 	}
 	while (src[index])
 	{
