@@ -6,60 +6,65 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/16 13:12:01 by abello-r          #+#    #+#             */
-/*   Updated: 2023/10/08 19:26:02 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/15 12:00:30 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*ft_array(char *x, unsigned int number, long int len)
+int	num_len(int n)
 {
-	while (number > 0)
+	int	i;
+
+	i = 0;
+	if (n < 0)
 	{
-		x[len--] = 48 + (number % 10);
-		number = number / 10;
+		n *= -1;
+		i++;
 	}
-	return (x);
-}
-
-static long int	ft_len(int n)
-{
-	int					len;
-
-	len = 0;
-	if (n <= 0)
-		len = 1;
+	if (n == 0)
+		i++;
 	while (n != 0)
 	{
-		len++;
 		n = n / 10;
+		i++;
 	}
-	return (len);
+	return (i);
+}
+
+char	*transf(char *nb, int n, int num_len)
+{
+	while (n > 0)
+	{
+		nb[num_len--] = (n % 10) + '0';
+		n /= 10;
+	}
+	return (nb);
 }
 
 char	*ft_itoa(int n)
 {
-	char				*x;
-	long int			len;
-	unsigned int		number;
-	int					sign;
+	char	*nb;
+	int		j;
 
-	sign = 1;
-	len = ft_len(n);
-	x = (char *)malloc(sizeof(char) * (len + 1));
-	if (!(x))
+	j = num_len(n);
+	nb = malloc(sizeof(char) * j);
+	if (!nb)
 		return (NULL);
-	x[len--] = '\0';
+	if (n == -2147483648)
+	{
+		nb[0] = '-';
+		nb[1] = '2';
+		n = 147483648;
+	}
 	if (n == 0)
-		x[0] = '0';
+		nb[0] = '0';
 	if (n < 0)
 	{
-		sign *= -1;
-		number = n * -1;
-		x[0] = '-';
+		nb[0] = '-';
+		n *= -1;
 	}
-	else
-		number = n;
-	x = ft_array(x, number, len);
-	return (x);
+	nb[j--] = '\0';
+	transf(nb, n, j);
+	return (nb);
 }
