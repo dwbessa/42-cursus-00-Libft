@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 12:27:34 by dbessa            #+#    #+#             */
-/*   Updated: 2023/10/11 14:13:43 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/15 11:32:25 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ int	ft_atoi(const char *nptr)
 	res = 0;
 	sign = 1;
 	while ((nptr[i] >= '\t' && nptr[i] <= '\r') || (nptr[i] == ' '))
-	{
 		i++;
-	}
 	while (nptr[i] == '-' || nptr[i] == '+')
 	{
 		if (nptr[i + 1] == '-' || nptr[i +1] == '+')
