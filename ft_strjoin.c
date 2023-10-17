@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 10:54:47 by dbessa            #+#    #+#             */
-/*   Updated: 2023/09/15 22:19:16 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/17 12:41:22 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		s3[count1 + count2] = s2[count2];
 		count2++;
 	}
-	s3[i + j + 1] = '\0';
+	s3[i + j] = '\0';
 	return (s3);
 }
