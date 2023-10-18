@@ -6,13 +6,13 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/16 13:12:01 by abello-r          #+#    #+#             */
-/*   Updated: 2023/10/15 12:00:30 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/18 12:24:20 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	num_len(int n)
+static int	num_len(int n)
 {
 	int	i;
 
@@ -32,7 +32,7 @@ int	num_len(int n)
 	return (i);
 }
 
-char	*transf(char *nb, int n, int num_len)
+static char	*transf(char *nb, int n, int num_len)
 {
 	while (n > 0)
 	{
