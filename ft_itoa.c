@@ -68,3 +68,4 @@ char	*ft_itoa(int n)
 	transf(nb, n, j);
 	return (nb);
 }
+
