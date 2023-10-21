@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 11:35:18 by dbessa            #+#    #+#             */
-/*   Updated: 2023/10/20 23:38:59 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/21 00:00:40 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		new_str[i] = f(i, (char)s[i]);
 		i++;
 	}
-	new_str[i] = '\0'; 
+	new_str[i] = '\0';
 	return (new_str);
 }
