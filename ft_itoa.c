@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/16 13:12:01 by abello-r          #+#    #+#             */
-/*   Updated: 2023/10/18 12:24:20 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/20 23:46:16 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ char	*ft_itoa(int n)
 	int		j;
 
 	j = num_len(n);
-	nb = malloc(sizeof(char) * j);
+	nb = malloc(sizeof(char) * j + 1);
 	if (!nb)
 		return (NULL);
 	if (n == -2147483648)
