@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 14:54:23 by dbessa            #+#    #+#             */
-/*   Updated: 2023/10/22 12:56:06 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/22 13:05:52 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*char_dest;
 	size_t				i;
 
+	if (!src && !dest)
+		return (NULL);
 	char_src = (const unsigned char *)src;
 	char_dest = (unsigned char *)dest;
-	if (!char_src || !char_dest)
-		return (NULL);
 	i = 0;
 	while (i < n)
 	{
