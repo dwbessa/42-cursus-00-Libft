@@ -6,7 +6,7 @@
 #    By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/07 14:27:53 by dbessa            #+#    #+#              #
-#    Updated: 2023/09/07 14:28:29 by dbessa           ###   ########.fr        #
+#    Updated: 2023/10/24 18:37:03 by dbessa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ BONUS			=	ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c \
 					ft_lstsize_bonus.c
 BONUS_OBJS		= $(BONUS:.c=.o)
 
-CC				= gcc
+CC				= cc
 RM				= rm -f
 CFLAGS			= -Wall -Wextra -Werror -I.
 
@@ -44,6 +44,10 @@ clean:
 
 fclean:			clean
 				$(RM) $(NAME)
+				
+so:
+			$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
+			gcc -nostartfiles -shared -o libft.so $(OBJS)
 
 re:				fclean $(NAME)
 

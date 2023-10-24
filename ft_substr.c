@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 17:24:59 by dbessa            #+#    #+#             */
-/*   Updated: 2023/10/20 23:37:10 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/10/24 19:03:25 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	len_src;
 	char	*destiny;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	len_src = ft_strlen(s);
 	if (start > len_src)
