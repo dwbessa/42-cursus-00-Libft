@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 15:14:21 by dbessa            #+#    #+#             */
-/*   Updated: 2023/10/13 08:13:38 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/11/01 11:47:29 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	c;
 	size_t	d;
 
+	if ((!dst || !src) && !dstsize)
+		return (0);
 	if (dstsize <= ft_strlen(dst))
 		return (dstsize + ft_strlen(src));
 	c = ft_strlen(dst);
