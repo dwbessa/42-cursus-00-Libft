@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/16 13:12:01 by abello-r          #+#    #+#             */
-/*   Updated: 2023/11/17 20:17:49 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/11/17 20:19:32 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,6 @@ static int	num_len(long n)
 	return (i);
 }
 
-static char	*transf(char *nb, long n, int num_len)
-{
-	while (n > 0)
-	{
-		nb[num_len--] = (n % 10) + '0';
-		n /= 10;
-	}
-	return (nb);
-}
-
 char	*ft_itoa(int n)
 {
 	char	*nb;
@@ -61,6 +51,10 @@ char	*ft_itoa(int n)
 		new *= -1;
 	}
 	nb[j--] = '\0';
-	transf(nb, new, j);
+	while (n > 0)
+	{
+		nb[num_len--] = (n % 10) + '0';
+		n /= 10;
+	}
 	return (nb);
 }
