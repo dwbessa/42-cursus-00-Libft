@@ -6,13 +6,13 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/16 13:12:01 by abello-r          #+#    #+#             */
-/*   Updated: 2023/10/21 00:00:20 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/11/17 20:15:14 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	num_len(int n)
+static int	num_len(long n)
 {
 	int	i;
 
@@ -32,7 +32,7 @@ static int	num_len(int n)
 	return (i);
 }
 
-static char	*transf(char *nb, int n, int num_len)
+static char	*transf(char *nb, long n, int num_len)
 {
 	while (n > 0)
 	{
@@ -46,25 +46,21 @@ char	*ft_itoa(int n)
 {
 	char	*nb;
 	int		j;
+	long	new;
 
 	j = num_len(n);
+	new = n;
 	nb = malloc(sizeof(char) * j + 1);
 	if (!nb)
 		return (NULL);
-	if (n == -2147483648)
-	{
-		nb[0] = '-';
-		nb[1] = '2';
-		n = 147483648;
-	}
-	if (n == 0)
+	if (new == 0)
 		nb[0] = '0';
-	if (n < 0)
+	if (new < 0)
 	{
 		nb[0] = '-';
-		n *= -1;
+		new *= -1;
 	}
 	nb[j--] = '\0';
-	transf(nb, n, j);
+	transf(nb, n, new);
 	return (nb);
 }
