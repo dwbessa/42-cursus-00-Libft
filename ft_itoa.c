@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/16 13:12:01 by abello-r          #+#    #+#             */
-/*   Updated: 2023/11/17 20:15:14 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/11/17 20:17:49 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,6 @@ char	*ft_itoa(int n)
 		new *= -1;
 	}
 	nb[j--] = '\0';
-	transf(nb, n, new);
+	transf(nb, new, j);
 	return (nb);
 }
