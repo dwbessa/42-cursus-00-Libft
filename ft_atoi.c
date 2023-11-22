@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 12:27:34 by dbessa            #+#    #+#             */
-/*   Updated: 2023/10/15 11:32:25 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/11/22 14:16:26 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,6 @@ int	ft_atoi(const char *nptr)
 		i++;
 	}
 	while (nptr[i] >= '0' && nptr[i] <= '9')
-	{
-		res = (res * 10) + (nptr[i] - '0');
-		i++;
-	}
+		res = (res * 10) + (nptr[i++] - '0');
 	return (res * sign);
 }
