@@ -6,41 +6,13 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 20:18:51 by dbessa            #+#    #+#             */
-/*   Updated: 2023/11/22 14:57:35 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/11/23 11:38:21 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*ft_strdup(const char *src)
-{
-	int		index;
-	char	*d;
-
-	index = 0;
-	d = malloc(ft_strlen(src) * sizeof(char) + 1);
-	if (!d)
-		return (NULL);
-	while (src[index])
-	{
-		d[index] = src[index];
-		index++;
-	}
-	d[index] = '\0';
-	return (d);
-}
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
-
-char	*ft_strjoin(char *s1, char *s2)
+char	*ft_strjoin_free(char *s1, char *s2)
 {
 	size_t	count1;
 	size_t	count2;
@@ -65,43 +37,4 @@ char	*ft_strjoin(char *s1, char *s2)
 	s3[count1] = '\0';
 	free(s1);
 	return (s3);
-}
-
-char	*ft_strchr(const char *s, int c)
-{
-	int	i;
-
-	i = 0;
-	if (!s)
-		return (NULL);
-	while (s[i] != '\0')
-	{
-		if (s[i] == c)
-			return ((char *)&s[i]);
-		i++;
-	}
-	if (c == '\0')
-		return ((char *)&s[i]);
-	return (NULL);
-}
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
-{
-	size_t	srcsize;
-	size_t	j;
-
-	if ((!dst || !src) && !size)
-		return (0);
-	srcsize = ft_strlen(src);
-	j = 0;
-	if (size > 0)
-	{
-		while (src[j] != '\0' && j < size - 1)
-		{
-			dst[j] = src[j];
-			j++;
-		}
-		dst[j] = '\0';
-	}
-	return (srcsize);
 }

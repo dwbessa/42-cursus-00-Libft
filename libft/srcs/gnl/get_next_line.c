@@ -6,11 +6,12 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 09:46:28 by dbessa            #+#    #+#             */
-/*   Updated: 2023/11/22 14:57:17 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/11/23 11:30:33 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+#include "libft.h"
 
 static char	*save_new_line(char *store)
 {
