@@ -30,8 +30,6 @@ For detailed information, refer to the [**subject of this project**](https://git
 * [`ft_isascii`](libft/srcs/is/ft_isascii.c)			- test for ASCII character.
 * [`ft_isalnum`](libft/srcs/is/ft_isalnum.c)			- alphanumeric character test.
 * [`ft_isalpha`](libft/srcs/is/ft_isalpha.c)			- alphabetic character test.
-* [`ft_islower`](libft/srcs/is/ft_islower.c) *	- lower-case character test.
-* [`ft_isupper`](libft/srcs/is/ft_isupper.c) *	- upper-case character test.
 * [`ft_isdigit`](libft/srcs/is/ft_isdigit.c)			- decimal-digit character test.
 * [`ft_isprint`](libft/srcs/is/ft_isprint.c)			- printing character test (space character inclusive).
 * [`ft_tolower`](libft/srcs/to/ft_tolower.c)			- upper case to lower case letter conversion.
